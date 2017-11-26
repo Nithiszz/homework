@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav"></div>
+    <div class="body">
+      <div class="left-bar"></div>
+      <div class="content"></div>
+    </div>
+  </div>
+</body>
+
+</html>
+<style>
+  .container {
+    height: 100vh;
+    background: #000;
+  }
+
+  .nav {
+    display: flex;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid blue;
+  }
+
+  .body {
+    display: flex;
+    height: 100%;
+    background: green;
+  }
+
+  .body .left-bar {
+    flex-grow: 0;
+    width: 300px;
+    background-color: red;
+  }
+
+  .body .content {
+    flex-grow: 1;
+    background-color: blue;
+  }
+</style>
