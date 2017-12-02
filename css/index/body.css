@@ -9,49 +9,11 @@
   border: 1px solid blue;
 }
 
-.body {
-  position: relative;
-  display: flex;
-  flex-flow: column wrap;
-}
-
-.body .sidebar {
-  display: flex;
-  flex-grow: 1;
-  margin-top: 5px;
-}
-
-.body .sidebar .sidebar-item {
-  display: flex;
-  flex-grow: 1;
-  justify-content: center;
-  flex-direction: column;
-  cursor: pointer;
-  align-items: center;
-  font-style: 14px;
-  height: 50px;
-  border: 1px solid black;
-  margin-top: 1px;
-}
-.body .sidebar .sidebar-item:nth-child(2) {
-  border-right: none;
-  border-left: none;
-}
-.body .sidebar .sidebar-item:nth-child(3) {
-  border-right: none;
-}
-.body .sidebar .sidebar-item:hover {
-  background-color: rgba(10, 10, 10, 0.1);
-}
-.body .sidebar .sidebar-item.is-active {
-  background-color: rgba(10, 10, 10, 0.1);
-}
-
 .body .content {
   display: flex;
-  height: auto;
   flex-flow: row wrap;
   overflow: hidden;
+  flex-grow: 1;
 }
 
 .body .content .card {
@@ -125,6 +87,7 @@
   overflow: hidden;
   border-radius: 3px;
 }
+
 @media screen and (max-width: 1393px) {
   .body .content .card {
     width: calc(33% - 20px);
