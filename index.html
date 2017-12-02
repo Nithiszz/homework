@@ -11,109 +11,119 @@
 <body>
   <div class="container">
     <div class="nav"></div>
-    <div class="body">
-      <div class="left-bar">
-        <div class="left-bar-item">
+    <nav class="body">
+      <nav class="sidebar">
+        <div class="sidebar-item">
           หน้าหลัก
         </div>
-        <div class="left-bar-item">
+        <div class="sidebar-item">
           รายละเอียด
         </div>
-        <div class="left-bar-item">
+        <div class="sidebar-item">
           ช่วยเหลือ
         </div>
-        <div class="left-bar-item">
+        <div class="sidebar-item">
           ติดต่อเรา
         </div>
-      </div>
+      </nav>
       <div class="content">
         <div class="card">
           <div class="card-header">
-            <div class="profile-circle">
-              <div class="profile"></div>
+            <div class="profile">
+              <div class="img"></div>
             </div>
-            <div class="header-profile">
-              <div class="name">
+            <div class="details">
+              <a href="/grid.html" class="name">
                 NithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszz
-              </div>
+              </a>
               <div class="times">
                 8ชั่วโมงที่แล้วววววววววววววววววววววววววววววววววววววววววววววว
               </div>
             </div>
           </div>
-          <div class="body-image">
+          <div class="card-body">
+            <div class="image">
+            </div>
           </div>
         </div>
         <div class="card">
           <div class="card-header">
-            <div class="profile-circle">
-              <div class="profile"></div>
+            <div class="profile">
+              <div class="img"></div>
             </div>
-            <div class="header-profile">
-              <div class="name">
+            <div class="details">
+              <a href="/grid.html" class="name">
                 NithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszz
-              </div>
+              </a>
               <div class="times">
                 8ชั่วโมงที่แล้วววววววววววววววววววววววววววววววววววววววววววววว
               </div>
             </div>
           </div>
-          <div class="body-image">
+          <div class="card-body">
+            <div class="image">
+            </div>
           </div>
         </div>
         <div class="card">
           <div class="card-header">
-            <div class="profile-circle">
-              <div class="profile"></div>
+            <div class="profile">
+              <div class="img"></div>
             </div>
-            <div class="header-profile">
-              <div class="name">
+            <div class="details">
+              <a href="/grid.html" class="name">
                 NithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszz
-              </div>
+              </a>
               <div class="times">
                 8ชั่วโมงที่แล้วววววววววววววววววววววววววววววววววววววววววววววว
               </div>
             </div>
           </div>
-          <div class="body-image">
+          <div class="card-body">
+            <div class="image">
+            </div>
           </div>
         </div>
         <div class="card">
           <div class="card-header">
-            <div class="profile-circle">
-              <div class="profile"></div>
+            <div class="profile">
+              <div class="img"></div>
             </div>
-            <div class="header-profile">
-              <div class="name">
+            <div class="details">
+              <a href="/grid.html" class="name">
                 NithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszz
-              </div>
+              </a>
               <div class="times">
                 8ชั่วโมงที่แล้วววววววววววววววววววววววววววววววววววววววววววววว
               </div>
             </div>
           </div>
-          <div class="body-image">
+          <div class="card-body">
+            <div class="image">
+            </div>
           </div>
         </div>
         <div class="card">
           <div class="card-header">
-            <div class="profile-circle">
-              <div class="profile"></div>
+            <div class="profile">
+              <div class="img"></div>
             </div>
-            <div class="header-profile">
-              <div class="name">
+            <div class="details">
+              <a href="/grid.html" class="name">
                 NithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszzNithiszz
-              </div>
+              </a>
               <div class="times">
                 8ชั่วโมงที่แล้วววววววววววววววววววววววววววววววววววววววววววววว
               </div>
             </div>
           </div>
-          <div class="body-image">
+          <div class="card-body">
+            <div class="image">
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   </div>
 </body>
 
@@ -136,14 +146,15 @@
     width: 100%;
   }
 
-  .body .left-bar {
-    width: 15%;
+  .body .sidebar {
+    flex-grow: 0;
   }
 
-  .body .left-bar .left-bar-item {
+  .body .sidebar .sidebar-item {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    cursor: pointer;
     align-items: center;
     font-style: 14px;
     height: 50px;
@@ -152,30 +163,30 @@
   }
 
   .body .content {
-    padding: 5px;
+    display: flex;
     height: auto;
-    width: 85%;
+    flex-flow: row wrap;
   }
 
   .body .content .card {
-    display: inline-block;
-    margin: 0 10px 20px;
-    width: calc(24.5% - 20px);
-    max-width: calc(24.5% - 20px);
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: calc(25% - 20px)
   }
 
   .body .content .card .card-header {
     display: flex;
     overflow: hidden;
-    padding: 10px;
+    padding: 10px 10px 10px 0;
+    width: 100%;
   }
 
-  .body .content .card .card-header .profile-circle {
+  .body .content .card .card-header .profile {
     flex-grow: 0;
-
   }
 
-  .body .content .card .card-header .profile-circle .profile {
+  .body .content .card .card-header .profile .img {
     width: 50px;
     height: 50px;
     border-radius: 100%;
@@ -185,18 +196,18 @@
     background-size: cover;
   }
 
-  .body .content .card .card-header .header-profile {
-    width: 100%;
+  .body .content .card .card-header .details {
     margin-left: 5px;
+    width: 100%;
     align-self: center;
-    max-width: 200px;
-    white-space: nowrap;
   }
 
   .body .content .card .card-header .name {
     display: block;
     width: 100%;
-    max-width: 200px;
+    text-decoration: none;
+    color: #000;
+    max-width: calc(100% - 50px);
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -205,7 +216,7 @@
   .body .content .card .card-header .times {
     display: block;
     width: 100%;
-    max-width: 200px;
+    max-width: calc(100% - 50px);
     margin-top: 5px;
     font-size: 11px;
     color: #7e7e7e;
@@ -214,7 +225,11 @@
     text-overflow: ellipsis;
   }
 
-  .body .content .card .body-image {
+  .body .content .card .card-body {
+    flex-grow: 1;
+  }
+
+  .body .content .card .card-body .image {
     width: 100%;
     height: 250px;
     background: url('https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?auto=format&fit=crop&w=750&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D 750w');
@@ -224,27 +239,17 @@
     overflow: hidden;
   }
 
-  .body .content .card .body-image img {
-    height: auto;
-    width: auto;
-  }
 
   @media screen and (max-width: 1393px) {
     .body .content .card {
-      width: calc(32% - 20px);
-      max-width: calc(32% - 20px);
+      width: calc(33% - 20px);
+
     }
   }
+
   @media screen and (max-width: 768px) {
     .body .content .card {
-      width: calc(48% - 20px);
-      max-width: calc(48% - 20px);
-    }
-  }
-  @media screen and (max-width: 578px) {
-    .body .content .card {
-      width: calc(100% - 20px);
-      max-width: calc(100% - 20px);
+      width: calc(50% - 20px);
     }
   }
 </style>
