@@ -1,14 +1,15 @@
-.content {
+.show-content {
   display: flex;
   flex-flow: column wrap;
   overflow: hidden;
+  margin-top: 5px;
 }
-.content .image-center {
+.show-content .image {
   flex-grow: 1;
   align-self: center;
 }
 
-.content .image-center .img {
+.show-content .image .img {
   width: 350px;
   height: 350px;
   background: url('https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?auto=format&fit=crop&w=750&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D 750w');
@@ -18,15 +19,12 @@
   overflow: hidden;
   border-radius: 3px;
 }
-.content .description {
-  margin-top: 15px;
-}
 
-.content .description .title {
+.show-content .description .title {
   font-size: 24px;
   font-weight: bold;
 }
-.content .description .sub-title {
+.show-content .description p {
   font-size: 18px;
   word-break: break-all;
 }
