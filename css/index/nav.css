@@ -43,6 +43,7 @@
     flex-wrap: wrap;
   }
   .body .sidebar {
+    flex-grow: 1;
     flex-flow: row nowrap;
   }
   
