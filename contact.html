@@ -45,20 +45,18 @@
         <div class="box-right">
           <form action="">
             <p>
-              <input class="input" placeholder="Name" type="text">
+              <input class="input" placeholder="Name" type="text" required>
             </p>
             <p>
-              <input class="input" placeholder="E-mail" type="text">
+              <input class="input" placeholder="E-mail" type="text" required>
             </p>
             <p>
-              <input class="input" placeholder="Subject" type="text">
+              <input class="input" placeholder="Subject" type="text" required>
             </p>
             <p>
-              <textarea class="input" placeholder="Message"></textarea>
+              <textarea class="input" placeholder="Message" required></textarea>
             </p>
-            <p>
-              <input class="button-submit" type="submit" value="GO!">
-            </p>
+            <button class="button-submit" type="submit">SEND!</button>
           </form>
         </div>
       </div>
@@ -99,6 +97,7 @@
   .box-left .contact {
     font-size: 18px;
     color: #000;
+    word-break: break-all;
   }
 
   .box-left .contact strong {
@@ -106,19 +105,18 @@
   }
 
   .box-right {
-    width: 50%;
+    width: calc(50% - 40px);
     text-align: center;
+    padding: 20px;
   }
 
   .box-right .input {
-    width: 80%;
+    width: 94%;
     padding: 10px;
     background: transparent;
     outline: none;
     color: #726659;
-
     border: solid 1px #b3aca7;
-
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -126,8 +124,8 @@
   }
 
   .box-right textarea {
-    min-width: 80%;
-    max-width: 80%;
+    min-width: 94%;
+    max-width: 94%;
     min-height: 110px;
     max-height: 110px;
     padding: 15px;
@@ -139,18 +137,11 @@
   }
 
   .button-submit {
-    width: 84%;
-
+    width: 100%;
     padding: 10px;
-
-
-    font-family: 'Lato', sans-serif;
-    font-size: 0.875em;
     color: #b3aca7;
-
     outline: none;
     cursor: pointer;
-
     border: solid 1px #b3aca7;
   }
 
