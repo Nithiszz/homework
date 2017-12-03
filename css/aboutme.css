@@ -35,3 +35,9 @@
   word-break: break-all;
   color: #000;
 }
+
+@media screen and (max-width: 578px) {
+  .help {
+    width: 100%;
+  }
+}

@@ -2,7 +2,7 @@
   display: flex;
   flex-flow: column wrap;
   overflow: hidden;
-  margin-top: 5px;
+  margin-top: 20px;
 }
 .show-content .image {
   flex-grow: 1;
