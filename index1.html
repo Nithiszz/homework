@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar"></nav>
+    <div class="content">
+      <div class="card">
+        <div class="header">
+          <div class="profile">
+            <div class="img"></div>
+          </div>
+          <div class="details">
+            <div class="name">Nithisz NithiszNithiszNithiszNithiszNithiszNithiszNithiszNithiszNithisz</div>
+            <div class="times">8 ชั่วโมงที่แล้ววววววววว</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <img src="https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?auto=format&fit=crop&w=750&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D 750w" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+<style>
+  .container {
+    height: 100vh;
+  }
+
+  .container .navbar {
+    display: flex;
+    height: 100px;
+    border: 1px solid black;
+  }
+
+  .container .content {
+    display: flex;
+    border: 1px solid black;
+    flex-flow: row wrap;
+    overflow: hidden;
+  }
+
+  .container .content .card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: calc(25% - 20px);
+  }
+
+  .container .content .card .header {
+    display: flex;
+    overflow: hidden;
+    padding: 10px 10px 10px 0;
+  }
+
+  .container .content .card .header .profile {
+    flex-grow: 0;
+  }
+
+  .container .content .card .header .profile .img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: url('https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?auto=format&fit=crop&w=750&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D 750w');
+    background-position: 50%;
+    background-size: cover;
+  }
+
+  .container .content .card .header .details {
+    margin-left: 10px;
+    width: 100%;
+    align-self: center;
+  }
+
+  .container .content .card .header .details .name {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+    color: #000;
+    max-width: calc(100% - 40px);
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .container .content .card .header .details .times {
+    font-size: 11px;
+    white-space: nowrap;
+    max-width: calc(100% - 40px);
+    text-overflow: ellipsis;
+    color: #363636;
+    overflow: hidden;
+  }
+
+  .container .content .card .card-body img {
+    height: 100%;
+    width: 100%;
+  }
+</style>
