@@ -23,65 +23,15 @@
           </div>
         </div>
         <div class="card-body">
-          <img src="https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?auto=format&fit=crop&w=750&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D 750w" alt="">
+          <img src="https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?auto=format&fit=crop&w=750&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D 750w"
+            alt="">
+        </div>
+        <div class="card-footer">
+          <h1 class="title">รายละเอียด</h1>
+          <div class="description">สวัสดีครับจารย์เป้</div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="profile">
-            <div class="img"></div>
-          </div>
-          <div class="details">
-            <div class="name">Nithisz NithiszNithiszNithiszNithiszNithiszNithiszNithiszNithiszNithisz</div>
-            <div class="times">8 ชั่วโมงที่แล้ววววววววว</div>
-          </div>
-        </div>
-        <div class="card-body">
-          <img src="https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?auto=format&fit=crop&w=750&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D 750w" alt="">
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="profile">
-            <div class="img"></div>
-          </div>
-          <div class="details">
-            <div class="name">Nithisz NithiszNithiszNithiszNithiszNithiszNithiszNithiszNithiszNithisz</div>
-            <div class="times">8 ชั่วโมงที่แล้ววววววววว</div>
-          </div>
-        </div>
-        <div class="card-body">
-          <img src="https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?auto=format&fit=crop&w=750&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D 750w" alt="">
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="profile">
-            <div class="img"></div>
-          </div>
-          <div class="details">
-            <div class="name">Nithisz NithiszNithiszNithiszNithiszNithiszNithiszNithiszNithiszNithisz</div>
-            <div class="times">8 ชั่วโมงที่แล้ววววววววว</div>
-          </div>
-        </div>
-        <div class="card-body">
-          <img src="https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?auto=format&fit=crop&w=750&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D 750w" alt="">
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="profile">
-            <div class="img"></div>
-          </div>
-          <div class="details">
-            <div class="name">Nithisz NithiszNithiszNithiszNithiszNithiszNithiszNithiszNithiszNithisz</div>
-            <div class="times">8 ชั่วโมงที่แล้ววววววววว</div>
-          </div>
-        </div>
-        <div class="card-body">
-          <img src="https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?auto=format&fit=crop&w=750&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D 750w" alt="">
-        </div>
-      </div>
+
     </div>
   </div>
 </body>
@@ -109,6 +59,9 @@
     display: flex;
     flex-direction: column;
     margin: 10px;
+    background-color: #bbb;
+    padding: 10px;
+    border-radius: 6px;
     width: calc(25% - 20px);
   }
 
@@ -160,5 +113,24 @@
   .container .content .card .card-body img {
     height: 100%;
     width: 100%;
+  }
+
+  .container .content .card .card-footer {
+    display: flex;
+    padding: 10px 10px 10px 0;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .container .content .card .card-footer .title {
+    flex-grow: 1;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .container .content .card .card-footer .description {
+    flex-grow: 1;
+    font-size: 14px;
+    word-break: break-all;
   }
 </style>
