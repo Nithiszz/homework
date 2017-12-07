@@ -85,13 +85,12 @@
   cursor: pointer;
 }
 .body .content .card .card-body:hover .overlay {
-  bottom: -20px;
+  bottom: 0;
 }
 .body .content .card .card-body .overlay {
   position: absolute;
-  bottom: -65px;
+  bottom: -47px;
   padding: 10px;
-  height: 100px;
   box-sizing: border-box;
   flex-flow: column wrap;
   background: rgba(0, 0, 0, .6);
