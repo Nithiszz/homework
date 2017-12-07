@@ -1,16 +1,17 @@
-.nav {
+.navbar {
   display: flex;
   background-color: #fff;
   min-height: 3.25rem;
   border: solid 1px black;
+  overflow: hidden;
   box-sizing: border-box;
 }
-.nav .nav-brand {
+.navbar .navbar-brand {
   display: flex;
   min-height: 3.25rem;
   flex-shrink: 0;
 }
-.nav-item {
+.navbar-item {
   display: flex;
   flex-grow: 0;
   flex-shrink: 0;
@@ -19,23 +20,23 @@
   padding: 0.5rem 1rem;
 }
 
-.nav-item img {
+.navbar-item img {
   height: auto;
   max-width: 100%;
   max-height: 1.75rem;
   align-self: center;
 }
 
-.nav .nav-menu {
+.navbar .navbar-menu {
   display: flex;
   flex-grow: 1;
 }
-.nav .nav-menu .nav-start {
+.navbar .navbar-menu .navbar-start {
   display: flex;
   justify-content: flex-start;
   margin-right: auto;
 }
-.nav .nav-menu .nav-end {
+.navbar .navbar-menu .navbar-end {
   display: flex;
   justify-content: flex-end;
   margin-left: auto;
