@@ -2,4 +2,5 @@
 @import url("./aboutme.css");
 @import url("./content/content.css");
 @import url("./index/body.css");
-@import url("./index/nav.css");
+@import url("./index/navbar.css");
+@import url("./index/sidebar.css");

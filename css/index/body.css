@@ -2,13 +2,6 @@
   height: 100vh;
 }
 
-.nav {
-  display: flex;
-  height: 100px;
-  background-color: #fff;
-  border: 1px solid blue;
-}
-
 .body .content {
   display: flex;
   flex-flow: row wrap;
