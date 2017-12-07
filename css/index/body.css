@@ -5,7 +5,7 @@
 .body .content {
   display: flex;
   flex-flow: row wrap;
-  width: 100%;
+  flex-grow: 1;
   overflow: hidden;
 }
 
@@ -71,7 +71,7 @@
 }
 
 .body .content .card .card-body .image {
-  height: 250px;
+  height: 400px;
   background: url('https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?auto=format&fit=crop&w=750&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D 750w');
   background-position: 50% 50%;
   background-repeat: no-repeat;

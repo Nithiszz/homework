@@ -1,8 +1,7 @@
 .navbar {
   display: flex;
-  background-color: #fff;
+  background-color: #888;
   min-height: 3.25rem;
-  border: solid 1px black;
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -11,7 +10,7 @@
   min-height: 3.25rem;
   flex-shrink: 0;
 }
-.navbar-item {
+.navbar .navbar-item {
   display: flex;
   flex-grow: 0;
   flex-shrink: 0;
@@ -20,7 +19,7 @@
   padding: 0.5rem 1rem;
 }
 
-.navbar-item img {
+.navbar .navbar-item img {
   height: auto;
   max-width: 100%;
   max-height: 1.75rem;
